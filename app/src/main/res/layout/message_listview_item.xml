@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <utils.cc.com.RoundImageView
+            android:id="@+id/imageView4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@mipmap/a" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textSize="13dp"
+            android:textColor="@color/black"
+            android:text="面包会有的" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/message_item_txt_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="13dp"
+            android:textColor="@color/black"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <utils.cc.com.NoScrollGridView
+            android:id="@+id/message_item_gridView"
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:layout_marginLeft="40dp"
+            android:columnWidth="70dp"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:verticalSpacing="5dp"
+            android:numColumns="3"
+            android:stretchMode="columnWidth" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1分钟前"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/txt_message_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textView13"
+            android:layout_weight="8"
+            android:layout_marginLeft="15dp"
+            android:text="删除"
+            android:textColor="#55CBF6"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/listView_img_message"
+            android:layout_width="20dp"
+            android:layout_height="13dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@mipmap/message" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@null"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

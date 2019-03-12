@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="activity.cc.com.demo009.activity.cc.com.FeedBackActivity">
+
+    <RelativeLayout
+        android:id="@+id/feed_back_rel_title"
+        android:layout_width="match_parent"
+        android:background="@mipmap/feedback"
+        android:layout_height="100dp" >
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="请输入反馈信息："
+        android:textColor="@color/black"
+        android:textSize="16dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/biankuang"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txt_feed_back_detail"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:autoText="true"
+            android:background="@null"
+            android:capitalize="words"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:gravity="top"
+            android:hint="请输入您要反馈的问题"
+            android:imeOptions="actionNext"
+            android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+            android:isScrollContainer="false"
+            android:maxLength="200"
+            android:minHeight="24dip"
+            android:minLines="5"
+            android:padding="4dip"
+            android:textSize="14dp" />
+
+        <requestFocus />
+
+        <TextView
+            android:id="@+id/txt_detail_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/200"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:layout_below="@+id/txt_feed_back_detail"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <!--
+
+    -->
+</LinearLayout>

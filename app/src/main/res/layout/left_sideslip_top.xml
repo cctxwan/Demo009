@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:gravity="center"
+    android:background="@mipmap/myselfbgp">
+
+    <utils.cc.com.RoundImageView
+        android:id="@+id/person"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="70dp"
+        android:src="@mipmap/refreshimg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:text="从你的全世界路过"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="18dp"
+        android:text="人生像一场没有尽头的旅行."/>
+
+</LinearLayout>

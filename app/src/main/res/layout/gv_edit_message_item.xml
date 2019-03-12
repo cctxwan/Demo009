@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/gv_edit_message_item"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/gray"
+        app:srcCompat="@mipmap/qq_groupmanager_edit_add_icon"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/gv_edit_message_item_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ooi"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/gv_edit_message_item"
+        android:layout_alignRight="@+id/gv_edit_message_item"
+        android:layout_alignEnd="@+id/gv_edit_message_item" />
+
+</RelativeLayout>

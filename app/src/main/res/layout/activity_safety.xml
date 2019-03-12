@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activity.cc.com.demo009.activity.cc.com.SafetyActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/feed_back_rel_title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@mipmap/safety">
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/safety_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp" />
+
+</LinearLayout>
